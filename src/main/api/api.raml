@@ -1,0 +1,33 @@
+#%RAML 0.8
+title: Sample API
+version: 1.0.0
+baseUri: http://isgn.com
+ 
+/user:
+  /queryuser:
+    get:
+      queryParameters:
+        page:
+          displayName: Page No.
+          type: integer
+      responses:
+        200:
+          body:
+            application/json: 
+              example: |
+                {
+                  "msg": "My first mule Project" 
+                }             
+              schema: |
+                {
+                  "$schema": "http://json-schema.org/draft-04/schema#",
+                  "title": "Mule project tutorial",
+                  "description": "Mule project tutorial by isgn.com",
+                  "type": "object",
+                  "properties": {
+                      "msg": {
+                          "description": "message on success response",
+                          "type": "string"
+                      }
+                   }
+                }
