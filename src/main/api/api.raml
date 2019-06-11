@@ -1,7 +1,7 @@
 #%RAML 0.8
 title: Sample API
 version: 1.0.0
-baseUri: http://isgn.com
+baseUri: http://mydomain.com
  
 /user:
   /queryuser:
@@ -16,13 +16,13 @@ baseUri: http://isgn.com
             application/json: 
               example: |
                 {
-                  "msg": "My first mule Project" 
+                  "msg": "My first Mule Project" 
                 }             
               schema: |
                 {
                   "$schema": "http://json-schema.org/draft-04/schema#",
                   "title": "Mule project tutorial",
-                  "description": "Mule project tutorial by isgn.com",
+                  "description": "Mule project tutorial by mydomain.com",
                   "type": "object",
                   "properties": {
                       "msg": {
